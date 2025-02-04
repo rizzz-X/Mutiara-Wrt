@@ -8,7 +8,7 @@ on:
       board_version:
         description: 'Select board version to compile'
         required: true
-        default: 'all'
+        default: 's905x-b860h'
         type: choice
         options:
           - all
@@ -219,7 +219,7 @@ jobs:
           if [ -d "amlogic-s9xxx-openwrt" ]; then
             rm -rf amlogic-s9xxx-openwrt
           fi
-          git clone --depth 1 https://github.com/maizil41/amlogic-s9xxx-openwrt.git
+          git clone --depth 1 https://github.com/rizzz-X/amlogic-s9xxx-openwrt.git
           cd amlogic-s9xxx-openwrt
           mkdir -p openwrt-armvirt
     
